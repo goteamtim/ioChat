@@ -26,4 +26,4 @@ Simple Chat application
 6. Open browser and go to http://localhost:3000
 
 
-Want to contribute? Read the CONTRIBUTING.md file to get started.
+Want to contribute? Read the <a href="https://github.com/Billmike/ioChat/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a> file to get started.
