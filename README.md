@@ -15,8 +15,15 @@ Simple Chat application
    ```
    npm install
    ```
-4. Start server
+4. Install gulp globally if you haven't 
+    ```
+    npm install --global gulp-cli
+    ```
+5. Start server
    ```
-   npm run start:dev
+   gulp
    ```
-5. Open browser and go to http://localhost:3000
+6. Open browser and go to http://localhost:3000
+
+
+Want to contribute? Read the CONTRIBUTING.md file to get started.
