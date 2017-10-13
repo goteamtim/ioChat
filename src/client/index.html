@@ -7,38 +7,45 @@
   <body>
     <div class="container">
       <div id="userFormArea" class="row">
-        <div class="col-md-12">
-          <form id="userForm">
-              <div class="form-group">
-                <label>Enter Username:</label>
-                <input class="form-control" id="username"/>
-                <br>
-                <input type="submit" class="btn btn-primary" value="Sign in">
-              </div>
-          </form>
-        </div>
+          <div class="col-md-12">
+              <form id="userForm">
+                  <div class="form-group">
+                      <label>Enter Username:</label>
+                      <input class="form-control" id="username"/>
+                      <br>
+                      <input type="submit" class="btn btn-primary" value="Sign in">
+                  </div>
+              </form>
+          </div>
       </div>
-
       <div id="messageArea" class="row">
-        <div class="col-md-4">
-          <div class="well">
-            <h3>Online Users</h3>
-            <ul  class="list-group" id="users"></ul>
-          </div>
-        </div>
-        <div class="col-md-8">
-          <div class="chat" id="chat"></div>
-            <form id="messageForm">
-              <div class="form-group">
-                <label>Enter Message:</label>
-                <textarea class="form-control" id="message"></textarea>
-                <br>
-                <input type="submit" class="btn btn-primary" value="Send message">
+          <div class="col-md-4">
+              <div class="well">
+                  <center><h3>Online Users</h3></center>
+                  <ul  class="list-group" id="users"></ul>
               </div>
-            </form>
           </div>
-        </div>
+          <div class="col-md-8">
+              <div class="chat" id="chat">
+
+              </div>
+              <form id="messageForm">
+                  <div class="form-group">
+
+
+                      <div class="panel-footer">
+                          <div class="input-group">
+                              <input type="text" id="message" class="form-control input-sm" placeholder="Type your message here..." />
+                              <span class="input-group-btn">
+                                  <input type="submit" class="btn btn-primary btn-sm" id="btn-chat">
+                                      Send</button>
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+          </div>
       </div>
-    </div>
+  </div>
   </body>
 </html>
