@@ -31,7 +31,6 @@ io.sockets.on('connection', (socket) => {
 
   // Message
   socket.on('send message', (data) => {
-    console.log(data);
     io.sockets.emit('new message', { msg: data, user: socket.username });
   });
   // User
