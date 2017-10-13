@@ -9,9 +9,39 @@
         <style>
             body{
                 margin-top: 30px;
+                background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalblack.png");
+                background-attachment: fixed;
+                background-repeat: repeat;  
             }
             #messageArea{
                 display: none;
+            }
+            #userForm label{
+                color:fff;
+            }
+            .list-group-items{
+                text-align: center;
+                text-decoration: none;
+            }   
+            .list-group{
+                list-style: none;   
+            }
+            .panel-footer {
+                background-color:transparent;
+            }
+            .well{
+                background-color: rgba(51, 122, 183, 0.05);
+                border: 3px solid rgba(51, 122, 183, 0.65);
+                border-radius: 20px;
+            }
+            .well h3{
+                color:ffffff;
+            }
+            .well ul li{
+                color:fff;
+            }
+            .chat{
+                color:#fff !important;
             }
         </style>
     </head>
@@ -32,7 +62,7 @@
             <div id="messageArea" class="row">
                 <div class="col-md-4">
                     <div class="well">
-                        <h3>Online Users</h3>
+                        <center><h3>Online Users</h3></center>
                         <ul  class="list-group" id="users"></ul>
                     </div>
                 </div>
@@ -42,10 +72,17 @@
                     </div>
                     <form id="messageForm">
                         <div class="form-group">
-                            <label>Enter Message:</label>
-                            <textarea class="form-control" id="message"></textarea>
-                            <br>
-                            <input type="submit" class="btn btn-primary" value="Send message">
+
+
+                            <div class="panel-footer">
+                                <div class="input-group">
+                                    <input type="text" id="message" class="form-control input-sm" placeholder="Type your message here..." />
+                                    <span class="input-group-btn">
+                                        <input type="submit" class="btn btn-primary btn-sm" id="btn-chat">
+                                            Send</button>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
