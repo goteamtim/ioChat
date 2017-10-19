@@ -1,6 +1,5 @@
 var mocha = require('mocha'),
     chai = require('chai'),
-    chaiHttp = require('chai-http'),
     server = require('../dist/server/server.js'),
     expect = chai.expect;
 
