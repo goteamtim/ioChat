@@ -31,5 +31,16 @@ var mocha = require('mocha'),
         });
         
     });
+    it("Lists new users",function(done){
+        var client = io.connect('http://localhost:3000', options);
+        client.on("get users",function(users){
+            expect(users).to.be.a('array');
+            done();
+        });
+        client.emit("new user","test_user_1",function(status){
+            
+        });
+        
+    });
     
     });
