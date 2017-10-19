@@ -28,7 +28,7 @@ $(document).ready(function() {
       if (data) {
         $userFormArea.hide();
         $messageArea.show();
-      } 
+      }
     });
     $username.val('');
   });
