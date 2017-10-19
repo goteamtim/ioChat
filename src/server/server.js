@@ -46,3 +46,8 @@ io.sockets.on('connection', (socket) => {
     io.sockets.emit('get users', users);
   }
 });
+
+
+exports.currentConnections = function(){
+  return connections.length;
+};
