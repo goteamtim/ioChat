@@ -124,7 +124,7 @@
             socket.on('get users',  (data) => {
                 var html = '';
                 for (i = 0; i < data.length; i++){
-                    html += '<li class="list-group-items">'+ data[i] + '</li>';
+                    html += '<li class="list-group-items" data-user="' + item + '">'+ item + '</li>';
                 }
                 $users.html(html);
             })
