@@ -37,9 +37,34 @@ $(document).ready(function() {
     let html = '';
 
     data.forEach((item) => {
-       html += '<li class="list-group-items">'+ item + '</li>';
+       html += '<li class="list-group-items" data-user="' + item + '">'+ item + '</li>';
     })
 
     $users.html(html);
   });
+
+  window.onkeyup = function(e) {
+    socket.emit("typing")
+  }
+
+  window.onkeydown = function(e) {
+    socket.emit("typing")
+  }
+
+  socket.on("typing",(data)=>{
+  if(true/*!your username*/){
+    showTypingAlert(data.user);
+  }
+  });
+
 });
+
+function showTypingAlert(username){
+  //If its not their username then show the box for one second?
+  //var d = document.querySelector('li[data-user="' + username + '"]');
+  $('li[data-user="' + username + '"]').addClass('typing');
+  //d.style.addClass('typing');
+  setTimeout(function(){
+    $('li[data-user="' + username + '"]').removeClass('typing')
+  },750);
+}

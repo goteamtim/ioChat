@@ -31,7 +31,12 @@ body{
 }
 .well ul li{
   color:fff;
+  transition: color .2s ease-in;
 }
 .chat{
   color:#fff !important;
+}
+
+.typing{
+  color: rgb(35, 219, 35);
 }
